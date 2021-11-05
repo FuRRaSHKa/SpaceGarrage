@@ -10,13 +10,20 @@ public class InputController : MonoBehaviour
     private ManController currentMan;
     private Camera cam;
 
+    private bool isPlaying = false;
+
     private void Start()
     {
         cam = Camera.main;
+        EventManager.onRoundEnd += RoundEnd;
+        RoundStart();
     }
 
     private void Update()
     {
+        if (!isPlaying)
+            return;
+
         if (Input.GetMouseButtonDown(0))
         {
             CheckClickPlace();
@@ -74,6 +81,16 @@ public class InputController : MonoBehaviour
         }
 
 
+    }
+
+    private void RoundStart()
+    {
+        isPlaying = true;
+    }
+
+    private void RoundEnd(bool isWin)
+    {
+        isPlaying = false;
     }
 
 }
