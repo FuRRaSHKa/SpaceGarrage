@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
+    [SerializeField] private LayerMask obstLayer;
+    [SerializeField] private FollowObj weChooseIndicator;
+
     private ManController currentMan;
     private Camera cam;
 
@@ -20,10 +23,23 @@ public class InputController : MonoBehaviour
         }
     }
 
+    private void TakeBoy(ManController boy)
+    {
+        currentMan = currentMan == boy ? null : boy;
+        if (currentMan != null)
+        {
+            weChooseIndicator.gameObject.SetActive(true);
+            weChooseIndicator.SetTarger(currentMan.transform);
+            return;
+        }
+
+        weChooseIndicator.gameObject.SetActive(false);
+    }
+
     private void CheckClickPlace()
     {
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Collider2D collusion = Physics2D.OverlapCircle(mousePos, .1f);
+        Collider2D collusion = Physics2D.OverlapCircle(mousePos, .1f, ~obstLayer.value);
 
         if (collusion == null)
         {
@@ -38,14 +54,14 @@ public class InputController : MonoBehaviour
             case "Player":
                 ManController newMan = collusion.GetComponent<ManController>();
                 if (newMan != null)
-                    currentMan = currentMan == newMan ? null : newMan;
-                
+                    TakeBoy(newMan);
+
                 return;
 
             case "Instrument":
-                PickableObject pickable = collusion.GetComponent<PickableObject>();
-                if (pickable != null && currentMan != null)
-                    currentMan.MoveToInstrument(pickable);
+                BoxWithInstrument box = collusion.GetComponent<BoxWithInstrument>();
+                if (box != null && currentMan != null)
+                    currentMan.MoveToInstrument(box);
 
                 return;
 

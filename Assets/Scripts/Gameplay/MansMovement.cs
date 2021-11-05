@@ -49,6 +49,8 @@ public class MansMovement : MonoBehaviour
         }
 
         transform.position = Vector3.MoveTowards(transform.position, path.vectorPath[currentWaypoint], speed * Time.deltaTime);
+        float angle = Vector2.SignedAngle(Vector2.right, (Vector2)path.vectorPath[currentWaypoint] - (Vector2)transform.position);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(new Vector3(0, 0, angle)), 10 * Time.deltaTime);
 
         if ((transform.position - path.vectorPath[currentWaypoint]).magnitude < nextWaypointDistance)
             currentWaypoint++;

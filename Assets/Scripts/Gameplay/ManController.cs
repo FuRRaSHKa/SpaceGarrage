@@ -8,19 +8,19 @@ public enum Instrument
     Hummer,
     Wrench,
     Flamethrower,
-    Extinguisher, 
+    Extinguisher,
     Tape
 }
 
 public class ManController : MonoBehaviour
 {
-
     [SerializeField] private Transform hand;
 
     private MansMovement mansMovement;
     private Instrument currentInstrument = Instrument.None;
 
     private bool isFixing = false;
+    private GameObject instrument;
 
     private void Start()
     {
@@ -35,30 +35,35 @@ public class ManController : MonoBehaviour
         mansMovement.MoveTo(pos);
     }
 
-    public void MoveToInstrument(PickableObject pickableObject)
+    public void MoveToInstrument(BoxWithInstrument box)
     {
         if (isFixing)
             return;
 
-        if (pickableObject.isIntrumentPicked)
+        if (currentInstrument == box.InstrumentType)
         {
-            if (currentInstrument == pickableObject.InstrumentType)
+            mansMovement.MoveTo(box.Position, () =>
             {
-                mansMovement.MoveTo(pickableObject.Position, () => 
-                {
-                    currentInstrument = Instrument.None;
-                    pickableObject.PlaceInstrument();
-                });
-            }
+                currentInstrument = Instrument.None;
+                box.PlaceInstrument(instrument);
+            });
 
             return;
         }
 
-        mansMovement.MoveTo(pickableObject.Position, () =>
+        if (currentInstrument == Instrument.None)
         {
-            currentInstrument = pickableObject.InstrumentType;
-            pickableObject.PickUp(hand);
-        });
+            mansMovement.MoveTo(box.Position, () =>
+            {
+                currentInstrument = box.InstrumentType;
+                instrument = box.PickUp(hand);
+            });
+
+            return;
+        }
+
+        mansMovement.MoveTo(box.Position);
+
     }
 
     public void MoveToProblem(ProblemScript problem)
@@ -68,8 +73,7 @@ public class ManController : MonoBehaviour
 
         mansMovement.MoveTo(problem.PosForFixing, () =>
         {
-            isFixing = true;
-            problem.FixIt(currentInstrument, () => isFixing = false);
+            isFixing = problem.FixIt(currentInstrument, () => isFixing = false);
         });
     }
 

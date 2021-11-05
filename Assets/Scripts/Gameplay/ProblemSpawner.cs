@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
+using System;
 
 public class ProblemSpawner : MonoBehaviour
 {
     [SerializeField] private int maxActiveCount = 2;
-    [SerializeField] private float spawnDelay = 0;
+    [SerializeField] private float maxSpawnDelay = 4;
+    [SerializeField] private float minSpawnDelay = 4;
     [SerializeField] private int needToWin = 15;
 
     [SerializeField] private List<ProblemScript> problems;
 
     private int currentActive = 0;
+    private IDisposable spawner;
 
     private void Awake()
     {
@@ -20,12 +23,18 @@ public class ProblemSpawner : MonoBehaviour
 
     private void Start()
     {
-        problems[0].BrokeIt();
+        spawner = Observable.Interval(TimeSpan.FromSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay)))
+            .TakeUntilDisable(gameObject)
+            .Subscribe(_ => 
+            {
+                if(currentActive < maxActiveCount)
+                    MakeProblem();
+            });
     }
 
     private void MakeProblem()
     {
-        int r = Random.Range(0, problems.Count);
+        int r = UnityEngine.Random.Range(0, problems.Count);
         if (problems[r].IsBroken)
             while (true)
             {
@@ -33,11 +42,12 @@ public class ProblemSpawner : MonoBehaviour
                 r %= problems.Count;
                 if (!problems[r].IsBroken)
                 {
+                    currentActive++;
                     problems[r].BrokeIt();
                     return;
                 }
             }
-
+        currentActive++;
         problems[r].BrokeIt();
     }
 
