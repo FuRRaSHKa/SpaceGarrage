@@ -14,13 +14,12 @@ public enum Instrument
 
 public class ManController : MonoBehaviour
 {
-    [SerializeField] private Transform hand;
+    [SerializeField] private SpriteRenderer bodyRenderer;
 
     private MansMovement mansMovement;
     private Instrument currentInstrument = Instrument.None;
 
     private bool isFixing = false;
-    private GameObject instrument;
 
     private void Start()
     {
@@ -42,13 +41,12 @@ public class ManController : MonoBehaviour
 
         mansMovement.MoveTo(box.Position, () =>
         {
-            if (instrument != null)
-                Destroy(instrument);
-            currentInstrument = box.InstrumentType;
-            instrument = box.PickUp(hand);
-        });
+            if (!bodyRenderer.enabled)
+                bodyRenderer.enabled = true;
 
-        return;
+            currentInstrument = box.InstrumentType;
+            bodyRenderer.sprite = box.PickUp();
+        });
     }
 
     public void MoveToProblem(ProblemScript problem)
@@ -60,8 +58,8 @@ public class ManController : MonoBehaviour
         {
             isFixing = problem.FixIt(currentInstrument, () => isFixing = false);
 
-            if (instrument != null && isFixing)
-                Destroy(instrument);
+            if(isFixing)
+                bodyRenderer.enabled = false;
         });
     }
 
