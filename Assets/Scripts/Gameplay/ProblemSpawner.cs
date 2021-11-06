@@ -22,13 +22,6 @@ public class ProblemSpawner : MonoBehaviour
 
     bool isEnded = false;
 
-    private void Awake()
-    {
-        EventManager.onProblemFixed += ProblemFixed;
-        EventManager.onRoundEnd += OnRoundEnd;
-        EventManager.onRoundStart += RoundStart;
-    }
-
     private void InitData()
     {
         maxActiveCount = roundDatas[currentRound].maxActiveCount;
@@ -48,6 +41,10 @@ public class ProblemSpawner : MonoBehaviour
 
     private void Start()
     {
+        EventManager.onProblemFixed += ProblemFixed;
+        EventManager.onRoundEnd += OnRoundEnd;
+        EventManager.onRoundStart += RoundStart;
+
         RoundStart();
     }
 
@@ -95,7 +92,6 @@ public class ProblemSpawner : MonoBehaviour
 
     private void OnRoundEnd(bool isWin)
     {
-        Debug.Log(false);
         if (isEnded)
             return;
 

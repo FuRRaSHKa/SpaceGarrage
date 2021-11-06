@@ -7,12 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class CutSceneManager : MonoBehaviour
 {
-
     [SerializeField] private Animator anim;
+
+    public void Start()
+    {
+        Debug.Log(true);
+    }
 
     public void StartCutScene()
     {
-        Debug.Log(true);
         Observable.Timer(TimeSpan.FromSeconds(1f))
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
