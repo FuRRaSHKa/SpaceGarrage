@@ -24,7 +24,7 @@ public class MansMovement : MonoBehaviour
 
     public void MoveTo(Vector2 target, Action callback = null)
     {
-        anim.SetTrigger("Move");
+        anim.SetBool("Move", true);
         this.callback = callback;
         seeker.StartPath(transform.position, target, OnPathComplete);
     }
@@ -45,7 +45,7 @@ public class MansMovement : MonoBehaviour
 
         if (currentWaypoint >= path.vectorPath.Count)
         {
-            anim.SetTrigger("Stop");
+            anim.SetBool("Move", false);
             callback?.Invoke();
             path = null;
             return;
