@@ -90,7 +90,10 @@ public class ProblemScript : MonoBehaviour
     public bool FixIt(Instrument instrument, Action callback)
     {
 
-        if (isBurned && isFixing)
+        if (isFixing)
+            return false;
+
+        if (isBurned)
             return PutOutFire(instrument, callback);
 
         if (targetInstrumentType != instrument)
