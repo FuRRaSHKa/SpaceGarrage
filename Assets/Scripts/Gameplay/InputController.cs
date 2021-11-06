@@ -16,6 +16,7 @@ public class InputController : MonoBehaviour
     {
         cam = Camera.main;
         EventManager.onRoundEnd += RoundEnd;
+        EventManager.onRoundStart += RoundStart;
         RoundStart();
     }
 
@@ -37,7 +38,7 @@ public class InputController : MonoBehaviour
 
     private void TakeBoy(ManController boy)
     {
-        currentMan = currentMan == boy ? null : boy;
+        currentMan = boy;
         if (currentMan != null)
         {
             weChooseIndicator.gameObject.SetActive(true);
