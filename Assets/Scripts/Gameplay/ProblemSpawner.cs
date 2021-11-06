@@ -95,6 +95,7 @@ public class ProblemSpawner : MonoBehaviour
 
     private void OnRoundEnd(bool isWin)
     {
+        Debug.Log(false);
         if (isEnded)
             return;
 

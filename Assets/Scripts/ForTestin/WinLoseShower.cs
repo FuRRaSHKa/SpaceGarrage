@@ -14,6 +14,7 @@ public class WinLoseShower : MonoBehaviour
 
     private void ShowResult(bool isWin)
     {
+
         if (isWin)
         {
             text.text = "Win";

@@ -12,6 +12,7 @@ public class CutSceneManager : MonoBehaviour
 
     public void StartCutScene()
     {
+        Debug.Log(true);
         Observable.Timer(TimeSpan.FromSeconds(1f))
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
