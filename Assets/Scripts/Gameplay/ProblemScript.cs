@@ -10,6 +10,7 @@ public class ProblemScript : MonoBehaviour
     [SerializeField] private Transform placeForFixing;
     [SerializeField] private SpriteRenderer burnEffect;
     [SerializeField] private SpriteRenderer normal;
+    [SerializeField] private TimerSlider timer;
 
     private float fixingTime;
     private float putOutFireTime;
@@ -17,18 +18,25 @@ public class ProblemScript : MonoBehaviour
     private float timeToLoseAfterFire;
 
     private SpriteRenderer spriteRenderer;
- 
+
     private IDisposable timerToFix;
-    private IDisposable timerToBurn;
-    private IDisposable loseTimer;
     private bool isBroken = false;
     private bool isBurned = false;
+    private bool enableToSpawn = true;
 
     public bool IsBroken
     {
         get
         {
             return isBroken;
+        }
+    }
+
+    public bool EnableToSpawn
+    {
+        get
+        {
+            return enableToSpawn;
         }
     }
 
@@ -56,47 +64,61 @@ public class ProblemScript : MonoBehaviour
 
     public void BrokeIt()
     {
-        timerToBurn?.Dispose();
-        timerToBurn = Observable.Timer(TimeSpan.FromSeconds(timeUntilItBurn))
-            .TakeUntilDisable(gameObject)
-            .Subscribe( _ => 
-            {
-                if (!isBroken)
-                    return;
-
-                burnEffect.enabled = true;
-                isBurned = true;
-                AfterFireTimer();
-            });
+        ToFire();
 
         isBroken = true;
+        enableToSpawn = false;
         normal.enabled = false;
         spriteRenderer.enabled = true;
     }
 
+    public void ToFire()
+    {
+        timer.PlayTimer(timeUntilItBurn, () =>
+        {
+            if (!isBroken)
+                return;
+
+            burnEffect.enabled = true;
+            isBurned = true;
+            AfterFireTimer();
+        });
+    }
+
     public bool FixIt(Instrument instrument, Action callback)
     {
-        
+
         if (isBurned)
             return PutOutFire(instrument, callback);
 
         if (targetInstrumentType != instrument)
             return false;
 
-        timerToBurn?.Dispose();
+        timer.StopTimer();
         timerToFix?.Dispose();
         timerToFix = Observable.Timer(TimeSpan.FromSeconds(fixingTime))
             .TakeUntilDisable(gameObject)
-            .Subscribe( _ => 
-            {
-                isBroken = false;
-                normal.enabled = true;
-                spriteRenderer.enabled = false;
-                callback?.Invoke();
-                EventManager.ProblemFixed();
-            });
+            .Subscribe(_ =>
+           {
+               isBroken = false;
+               normal.enabled = true;
+               spriteRenderer.enabled = false;
+               callback?.Invoke();
+               EventManager.ProblemFixed();
+               MakeEnableToSpawn();
+           });
 
         return true;
+    }
+
+    private void MakeEnableToSpawn()
+    {
+        Observable.Timer(TimeSpan.FromSeconds(3))
+             .TakeUntilDisable(gameObject)
+             .Subscribe(_ =>
+             {
+                 enableToSpawn = true;
+             });
     }
 
     private bool PutOutFire(Instrument instrument, Action callback)
@@ -104,7 +126,7 @@ public class ProblemScript : MonoBehaviour
         if (Instrument.Extinguisher != instrument)
             return false;
 
-        loseTimer?.Dispose();
+        timer.StopTimer();
         timerToFix?.Dispose();
         timerToFix = Observable.Timer(TimeSpan.FromSeconds(putOutFireTime))
             .TakeUntilDisable(gameObject)
@@ -112,6 +134,7 @@ public class ProblemScript : MonoBehaviour
             {
                 isBurned = false;
                 burnEffect.enabled = false;
+                ToFire();
                 callback?.Invoke();
             });
 
@@ -122,11 +145,11 @@ public class ProblemScript : MonoBehaviour
     private void OnRoundEnd(bool isWin)
     {
         timerToFix?.Dispose();
-        timerToBurn?.Dispose();
-        loseTimer?.Dispose();
+        timer.StopTimer();
 
         isBroken = false;
         isBurned = false;
+        enableToSpawn = true;
 
         if (isWin)
         {
@@ -138,16 +161,13 @@ public class ProblemScript : MonoBehaviour
 
     private void AfterFireTimer()
     {
-        loseTimer?.Dispose();
-        loseTimer = Observable.Timer(TimeSpan.FromSeconds(timeToLoseAfterFire))
-            .TakeUntilDisable(gameObject)
-            .Subscribe( _ => 
-            {
-                if (!isBurned)
-                    return;
+        timer.PlayTimer(timeToLoseAfterFire, () =>
+        {
+            if (!isBurned)
+                return;
 
-                EventManager.EndRound(false);
-            });
+            EventManager.EndRound(false);
+        });
     }
 
 }

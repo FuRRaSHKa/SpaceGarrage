@@ -22,7 +22,30 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 76196
+  Length: 115500
+--- !u!114 &-7335214766859846149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ui_approve
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ui_approve
+  guid: 844e9a69156ab242b777b99d6fea7fa3
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 90
 --- !u!114 &-2989822534777710699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,12 +86,14 @@ MonoBehaviour:
   - {fileID: 8224758295804816246}
   EditorEvents:
   - {fileID: -7463514715588846286}
+  - {fileID: 8903157122734791453}
+  - {fileID: -7335214766859846149}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8224758295804816246}
   StringsBanks:
   - {fileID: 3141293961516787786}
-  stringsBankWriteTime: 637717334198565426
+  stringsBankWriteTime: 637717931598774845
   cacheVersion: 8
 --- !u!114 &3141293961516787786
 MonoBehaviour:
@@ -85,10 +110,10 @@ MonoBehaviour:
   Path: FMODbank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637717334198565426
+  lastModified: 637717931598774845
   FileSizes:
   - Name: 
-    Value: 754
+    Value: 896
   Exists: 1
 --- !u!114 &4815499849458132308
 MonoBehaviour:
@@ -127,6 +152,29 @@ MonoBehaviour:
   Path: FMODbank/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637717334198525406
+  lastModified: 637717931598694827
   FileSizes: []
   Exists: 1
+--- !u!114 &8903157122734791453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ui_select
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ui_select
+  guid: 7f37bd74fad3a24ab4a2767ef5c983a2
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 90

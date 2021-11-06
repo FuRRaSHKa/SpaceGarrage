@@ -16,5 +16,4 @@ public class FollowObj : MonoBehaviour
     {
         this.target = target;
     }
-
 }

@@ -9,9 +9,6 @@ public class PickableObject : MonoBehaviour
     [SerializeField] private Transform instrumerntPlace;
     [SerializeField] private Transform placeForPickUp;
 
-    [HideInInspector]
-    public bool isIntrumentPicked = false;
-
     public Transform Instrument
     {
         get
@@ -48,14 +45,12 @@ public class PickableObject : MonoBehaviour
     {
         instrument.SetParent(hand);
         instrument.localPosition = Vector3.zero;
-        isIntrumentPicked = true;
     }
 
     public void PlaceInstrument()
     {
         instrument.SetParent(instrumerntPlace);
         instrument.localPosition = Vector3.zero;
-        isIntrumentPicked = false;
     }
 
 }

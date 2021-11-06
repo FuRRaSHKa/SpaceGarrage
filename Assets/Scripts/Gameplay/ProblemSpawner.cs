@@ -8,6 +8,8 @@ public class ProblemSpawner : MonoBehaviour
 {
     [SerializeField] private List<ProblemScript> problems;
     [SerializeField] private List<RoundData> roundDatas;
+    [SerializeField] private CutSceneManager cutSceneManager;
+    [SerializeField] private UITimer uITimer;
 
     private int maxActiveCount = 2;
     private float maxSpawnDelay = 4;
@@ -17,12 +19,14 @@ public class ProblemSpawner : MonoBehaviour
 
     private int currentActive = 0;
     private IDisposable spawner;
-    private IDisposable winTimer;
+
+    bool isEnded = false;
 
     private void Awake()
     {
         EventManager.onProblemFixed += ProblemFixed;
         EventManager.onRoundEnd += OnRoundEnd;
+        EventManager.onRoundStart += RoundStart;
     }
 
     private void InitData()
@@ -32,17 +36,23 @@ public class ProblemSpawner : MonoBehaviour
         minSpawnDelay = roundDatas[currentRound].minSpawnDelay;
         roundTime = roundDatas[currentRound].roundTime;
         currentActive = 0;
+        isEnded = false;
 
         for (int i = 0; i < problems.Count; i++)
         {
             problems[i].Init(roundDatas[currentRound]);
         }
+
+        StartSpawner();
     }
 
     private void Start()
     {
         RoundStart();
+    }
 
+    private void StartSpawner()
+    {
         spawner = Observable.Interval(TimeSpan.FromSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay)))
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
@@ -55,18 +65,25 @@ public class ProblemSpawner : MonoBehaviour
     private void MakeProblem()
     {
         int r = UnityEngine.Random.Range(0, problems.Count);
-        if (problems[r].IsBroken)
+        if (!problems[r].EnableToSpawn)
+        {
+            int t = r;
             while (true)
             {
-                r++;
-                r %= problems.Count;
-                if (!problems[r].IsBroken)
+                t++;
+                t %= problems.Count;
+                if (problems[t].EnableToSpawn)
                 {
                     currentActive++;
-                    problems[r].BrokeIt();
+                    problems[t].BrokeIt();
                     return;
                 }
+
+                if (t == r)
+                    return;
             }
+        }
+            
         currentActive++;
         problems[r].BrokeIt();
     }
@@ -78,24 +95,34 @@ public class ProblemSpawner : MonoBehaviour
 
     private void OnRoundEnd(bool isWin)
     {
+        if (isEnded)
+            return;
+
+        isEnded = true;
+        uITimer.StopTimer();
+
+        if(isWin)
+            if(currentRound < roundDatas.Count)
+                cutSceneManager.StartCutScene();
+            else
+                cutSceneManager.StartWin();
+        else
+            cutSceneManager.StartLose();
+
         spawner?.Dispose();
     }
 
     private void RoundStart()
     {
         InitData();
+        isEnded = false;
 
-        winTimer?.Dispose();
-        winTimer = Observable.Timer(TimeSpan.FromSeconds(roundTime))
-            .TakeUntilDisable(gameObject)
-            .Subscribe( _ => 
-            {
-                RoundWin();
-            });
+        uITimer.PlayTimer(roundTime, RoundWin);
     }
 
     private void RoundWin()
     {
+        currentRound++;
         EventManager.EndRound(true);
     }
 }

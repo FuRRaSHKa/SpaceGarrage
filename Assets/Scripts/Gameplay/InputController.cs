@@ -26,8 +26,13 @@ public class InputController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            CheckClickPlace();
+            LeftClick();
+        } 
+        else if (Input.GetMouseButtonDown(1))
+        {
+            RightClick();
         }
+
     }
 
     private void TakeBoy(ManController boy)
@@ -43,7 +48,28 @@ public class InputController : MonoBehaviour
         weChooseIndicator.gameObject.SetActive(false);
     }
 
-    private void CheckClickPlace()
+    private void LeftClick()
+    {
+        Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D collusion = Physics2D.OverlapCircle(mousePos, .1f, ~obstLayer.value);
+
+        if (collusion == null)
+        {
+            TakeBoy(null);
+            return;
+        }
+
+        if (collusion.CompareTag("Player"))
+        {
+            ManController newMan = collusion.GetComponent<ManController>();
+            if (newMan != null)
+                TakeBoy(newMan);
+
+            return;
+        }
+    }
+
+    private void RightClick()
     {
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
         Collider2D collusion = Physics2D.OverlapCircle(mousePos, .1f, ~obstLayer.value);
@@ -57,13 +83,7 @@ public class InputController : MonoBehaviour
         }
 
         switch (collusion.tag)
-        {
-            case "Player":
-                ManController newMan = collusion.GetComponent<ManController>();
-                if (newMan != null)
-                    TakeBoy(newMan);
-
-                return;
+        {             
 
             case "Instrument":
                 BoxWithInstrument box = collusion.GetComponent<BoxWithInstrument>();

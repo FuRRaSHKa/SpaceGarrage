@@ -40,30 +40,15 @@ public class ManController : MonoBehaviour
         if (isFixing)
             return;
 
-        if (currentInstrument == box.InstrumentType)
+        mansMovement.MoveTo(box.Position, () =>
         {
-            mansMovement.MoveTo(box.Position, () =>
-            {
-                currentInstrument = Instrument.None;
-                box.PlaceInstrument(instrument);
-            });
+            if (instrument != null)
+                Destroy(instrument);
+            currentInstrument = box.InstrumentType;
+            instrument = box.PickUp(hand);
+        });
 
-            return;
-        }
-
-        if (currentInstrument == Instrument.None)
-        {
-            mansMovement.MoveTo(box.Position, () =>
-            {
-                currentInstrument = box.InstrumentType;
-                instrument = box.PickUp(hand);
-            });
-
-            return;
-        }
-
-        mansMovement.MoveTo(box.Position);
-
+        return;
     }
 
     public void MoveToProblem(ProblemScript problem)
@@ -74,6 +59,9 @@ public class ManController : MonoBehaviour
         mansMovement.MoveTo(problem.PosForFixing, () =>
         {
             isFixing = problem.FixIt(currentInstrument, () => isFixing = false);
+
+            if (instrument != null && isFixing)
+                Destroy(instrument);
         });
     }
 
