@@ -725,9 +725,8 @@ MonoBehaviour:
   bossMoving: {fileID: 1196106236}
   prorab: {fileID: 1244857975}
   bossPhone: {fileID: 843279683}
-  placeForCam: {fileID: 0}
-  sizeCam: 0
   waypoints:
+  - {fileID: 1577557290}
   - {fileID: 1111157855}
   - {fileID: 1252862856}
   - {fileID: 281932238}
@@ -1328,10 +1327,10 @@ MonoBehaviour:
   - "\u0422\u0430\u043C \u0432\u0441\u0435 \u0441\u043F\u043E\u043A\u043E\u0439\u043D\u043E?"
   - "\u0415\u0442\u0438\u0442\u044C \u0437\u0430 \u043D\u043E\u0433\u0443, \u0427\u0422\u041E
     \u0423 \u0412\u0410\u0421 \u0422\u0410\u041C?!"
-  - "\u042F \u0441\u0435\u0439\u0447\u0430\u0441 \u043F\u0440\u0438\u0434\u0443 \u0438
-    \u0445\u043E\u0442\u044C \u043E\u0434\u043D\u0430 \u0434\u0435\u0442\u0430\u043B\u044C
-    \u043D\u0435 \u0431\u0443\u0434\u0435\u0442 \u043D\u0430 \u043C\u0435\u0441\u0442\u0435,
-    \u0442\u043E \u2026."
+  - "\u0421\u043B\u044B\u0448\u0443. \u042F \u0441\u0435\u0439\u0447\u0430\u0441
+    \u043F\u0440\u0438\u0434\u0443 \u0438 \u0445\u043E\u0442\u044C \u043E\u0434\u043D\u0430
+    \u0434\u0435\u0442\u0430\u043B\u044C \u043D\u0435 \u0431\u0443\u0434\u0435\u0442
+    \u043D\u0430 \u043C\u0435\u0441\u0442\u0435, \u0442\u043E \u2026."
   textMeshPro: {fileID: 1097793967}
 --- !u!1 &1111157854
 GameObject:
@@ -1494,6 +1493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  isMoving: 0
 --- !u!1 &1244857973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3045,6 +3045,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6745284614276368087, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: second
+      value: 
+      objectReference: {fileID: 630894684}
     - target: {fileID: 6745284614276368087, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: uITimer
       value: 
