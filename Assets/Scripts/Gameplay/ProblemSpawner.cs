@@ -47,7 +47,6 @@ public class ProblemSpawner : MonoBehaviour
         EventManager.onProblemFixed += ProblemFixed;
         EventManager.onRoundEnd += OnRoundEnd;
         EventManager.onRoundStart += RoundStart;
-        RoundStart();
     }
 
     private void StartSpawner()

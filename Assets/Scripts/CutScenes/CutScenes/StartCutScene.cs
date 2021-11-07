@@ -19,8 +19,6 @@ public class StartCutScene : MonoBehaviour
 
     private void Start()
     {
-        return;
-
         cam = Camera.main;
         startCamSize = cam.orthographicSize;
         starCamPos = cam.transform.position;
