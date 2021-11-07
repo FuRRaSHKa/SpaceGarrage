@@ -19,6 +19,8 @@ public class FourthCutScene : MonoBehaviour
     [SerializeField] private CamShaking shipShaking;
     [SerializeField] private CutSceneManager cutSceneManager;
 
+    private FMOD.Studio.EventInstance instance;
+
     private Camera cam;
     private Vector3 starCamPos;
     private float startCamSize;
@@ -34,7 +36,8 @@ public class FourthCutScene : MonoBehaviour
 
     public void StartScene()
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/scene5_win");
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/scene5_win");
+        instance.start();
 
         NextWayPoint(pop, 0, null, waypointsBatyoshka);
         NextWayPoint(boss, 0, FlyUp, waypointsBoss);
