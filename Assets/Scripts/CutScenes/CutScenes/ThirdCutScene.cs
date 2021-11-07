@@ -14,6 +14,7 @@ public class ThirdCutScene : MonoBehaviour
 
     public void StarScene()
     {
+        isStart = false;
         FMODUnity.RuntimeManager.PlayOneShot("event:/scene4_pop");
         Timer(() =>
         {
