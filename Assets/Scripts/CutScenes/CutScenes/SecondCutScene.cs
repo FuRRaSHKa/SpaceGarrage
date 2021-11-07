@@ -45,7 +45,7 @@ public class SecondCutScene : MonoBehaviour
 
     public void StarScene()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(pathSound);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/scene3_boss_came");
         Timer(() =>
         {
             NextWayPoint(0, Texting);

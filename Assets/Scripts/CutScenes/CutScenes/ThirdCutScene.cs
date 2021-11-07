@@ -6,7 +6,6 @@ using UniRx;
 
 public class ThirdCutScene : MonoBehaviour
 {
-
     [SerializeField] private MovingCharacter popMoving;
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private string pathSound;
@@ -15,7 +14,7 @@ public class ThirdCutScene : MonoBehaviour
 
     public void StarScene()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(pathSound);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/scene4_pop");
         Timer(() =>
         {
             NextWayPoint(0, ()=>
