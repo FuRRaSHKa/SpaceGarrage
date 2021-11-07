@@ -18,6 +18,8 @@ public class SecondCutScene : MonoBehaviour
     private float startCamSize;
     private MoveCameraSmooth cameraSmooth;
 
+    private FMOD.Studio.EventInstance instance;
+
     private bool isStart = true;
 
     private void Start()
@@ -35,6 +37,9 @@ public class SecondCutScene : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.release();
+
             prorab.transform.parent.gameObject.SetActive(false);
             cameraSmooth.MoveTo(starCamPos, startCamSize);
             GoOut();
@@ -46,7 +51,10 @@ public class SecondCutScene : MonoBehaviour
     public void StarScene()
     {
         isStart = false;
-        FMODUnity.RuntimeManager.PlayOneShot("event:/scene3_boss_came");
+
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/scene3_boss_came");
+        instance.start();
+
         Timer(() =>
         {
             NextWayPoint(0, Texting);

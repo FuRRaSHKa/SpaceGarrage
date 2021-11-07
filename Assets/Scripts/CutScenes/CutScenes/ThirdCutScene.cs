@@ -10,12 +10,17 @@ public class ThirdCutScene : MonoBehaviour
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private string pathSound;
 
+    private FMOD.Studio.EventInstance instance;
+
     private bool isStart = true;
 
     public void StarScene()
     {
         isStart = false;
-        FMODUnity.RuntimeManager.PlayOneShot("event:/scene4_pop");
+
+        instance = FMODUnity.RuntimeManager.CreateInstance("event:/scene4_pop");
+        instance.start();
+
         Timer(() =>
         {
             NextWayPoint(0, ()=>
@@ -32,6 +37,9 @@ public class ThirdCutScene : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.release();
+
             GoOut();
             isStart = true;
         }

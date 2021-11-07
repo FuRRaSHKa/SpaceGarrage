@@ -14,6 +14,9 @@ public class ProblemSpawner : MonoBehaviour
     [SerializeField] private ThirdCutScene third;
     [SerializeField] private FourthCutScene fourthCut;
 
+    private FMOD.Studio.EventInstance musicInstance;
+    private FMOD.Studio.EventInstance ambienceInstance;
+
     private int maxActiveCount = 2;
     private float maxSpawnDelay = 4;
     private float minSpawnDelay = 4;
@@ -47,6 +50,12 @@ public class ProblemSpawner : MonoBehaviour
         EventManager.onProblemFixed += ProblemFixed;
         EventManager.onRoundEnd += OnRoundEnd;
         EventManager.onRoundStart += RoundStart;
+
+        musicInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Music/main_music");
+        ambienceInstance = FMODUnity.RuntimeManager.CreateInstance("event:/Ambience/main_ambience");
+
+        musicInstance.start();
+        ambienceInstance.start();
     }
 
     private void StartSpawner()
@@ -100,7 +109,7 @@ public class ProblemSpawner : MonoBehaviour
         isEnded = true;
         uITimer.StopTimer();
 
-        if(isWin)
+        if (isWin)
             if(currentRound < roundDatas.Count)
                 switch (currentRound) 
                 {
@@ -114,7 +123,15 @@ public class ProblemSpawner : MonoBehaviour
             else
                 fourthCut.StartScene();
         else
+        {
             cutSceneManager.StartLose();
+
+            musicInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            musicInstance.release();
+
+            ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            ambienceInstance.release();
+        }    
 
         spawner?.Dispose();
     }
