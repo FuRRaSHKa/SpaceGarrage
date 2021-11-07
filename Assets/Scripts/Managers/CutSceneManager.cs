@@ -31,6 +31,7 @@ public class CutSceneManager : MonoBehaviour
 
     public void StartLose()
     {
+
         anim.SetTrigger("Lose");
     }
 
@@ -45,7 +46,7 @@ public class CutSceneManager : MonoBehaviour
             .TakeUntilDisable(gameObject)
             .Subscribe( _ => 
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
             });
     }
 }
