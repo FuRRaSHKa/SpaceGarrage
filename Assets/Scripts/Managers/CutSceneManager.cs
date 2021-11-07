@@ -11,7 +11,7 @@ public class CutSceneManager : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log(true);
+
     }
 
     public void StartCutScene()
