@@ -36,7 +36,7 @@ public class BoxWithInstrument : MonoBehaviour
 
     public Sprite PickUp()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(pickUpSound);
+        FMODUnity.RuntimeManager.PlayOneShot(pickUpSound, transform.position);
         return instrumentSprite;
     }
 

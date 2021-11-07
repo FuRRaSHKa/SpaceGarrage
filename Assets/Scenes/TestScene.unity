@@ -3202,14 +3202,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1784693725
-AudioListener:
+--- !u!114 &1784693725
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784693724}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!20 &1784693726
 Camera:
   m_ObjectHideFlags: 0
@@ -3810,6 +3816,30 @@ PrefabInstance:
       propertyPath: pickUpSound
       value: event:/SFX/tools/firethrower_take
       objectReference: {fileID: 0}
+    - target: {fileID: 2668484875804279395, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 2668484875804279395, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588968935616329285, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4588968935616329285, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745284612743202254, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 6745284612743202254, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_panel
+      objectReference: {fileID: 0}
     - target: {fileID: 6745284613261692112, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: pickUpSound
       value: event:/SFX/tools/tape_take
@@ -3973,6 +4003,62 @@ PrefabInstance:
     - target: {fileID: 6745284614463398059, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: pickUpSound
       value: event:/SFX/tools/extinguisher_take
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703338695067584, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703338695067584, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_leak
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703338920959612, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703338920959612, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339142709568, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339142709568, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_leak
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339196179957, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339196179957, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339751509295, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339751509295, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_wires
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339760464053, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339760464053, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339838958200, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathPutOutSound
+      value: event:/SFX/problems/repair_fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321703339838958200, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: pathReapairSound
+      value: event:/SFX/problems/repair_panel
       objectReference: {fileID: 0}
     - target: {fileID: 9193329550127933932, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: m_Enabled
