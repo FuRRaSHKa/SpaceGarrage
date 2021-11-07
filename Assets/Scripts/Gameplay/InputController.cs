@@ -5,6 +5,7 @@ using UnityEngine;
 public class InputController : MonoBehaviour
 {
     [SerializeField] private LayerMask obstLayer;
+    [SerializeField] private LayerMask playerLevel;
     [SerializeField] private FollowObj weChooseIndicator;
     [SerializeField] private string pathChooseSound;
     [SerializeField] private string pathWalkSound;
@@ -56,7 +57,7 @@ public class InputController : MonoBehaviour
     private void LeftClick()
     {
         Vector2 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-        Collider2D collusion = Physics2D.OverlapCircle(mousePos, .1f, ~obstLayer.value);
+        Collider2D collusion = Physics2D.OverlapCircle(mousePos, .1f, playerLevel.value);
 
         if (collusion == null)
         {

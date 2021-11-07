@@ -17,6 +17,7 @@ public class FourthCutScene : MonoBehaviour
     [SerializeField] private Transform[] waypointsBoss;
     [SerializeField] private Animator shipAnim;
     [SerializeField] private CamShaking shipShaking;
+    [SerializeField] private CutSceneManager cutSceneManager;
 
     [SerializeField] private string pathSound;
 
@@ -84,7 +85,9 @@ public class FourthCutScene : MonoBehaviour
                 {
                     prorab.TextLine(() => Timer(() =>
                     {
-                        EventManager.StartRound();
+
+                        cutSceneManager.StartWin();
+
                     }));
                     
                 }));
