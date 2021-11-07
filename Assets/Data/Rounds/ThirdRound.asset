@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c967b2345b1d2dc4f87f7f65e8f0d20a, type: 3}
   m_Name: ThirdRound
   m_EditorClassIdentifier: 
-  maxSpawnDelay: 0
-  minSpawnDelay: 0
-  maxActiveCount: 0
-  needToWin: 0
-  time: 0
+  maxSpawnDelay: 4
+  minSpawnDelay: 3
+  maxActiveCount: 3
+  roundTime: 120
+  timeUntilFire: 10
+  timeToFix: 1
+  timeToPutOutFire: 1
+  timeToLoseAfterFire: 10

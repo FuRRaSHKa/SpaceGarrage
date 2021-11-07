@@ -6,6 +6,8 @@ public class InputController : MonoBehaviour
 {
     [SerializeField] private LayerMask obstLayer;
     [SerializeField] private FollowObj weChooseIndicator;
+    [SerializeField] private string pathChooseSound;
+    [SerializeField] private string pathWalkSound;
 
     private ManController currentMan;
     private Camera cam;
@@ -41,6 +43,7 @@ public class InputController : MonoBehaviour
         currentMan = boy;
         if (currentMan != null)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_select");
             weChooseIndicator.gameObject.SetActive(true);
             weChooseIndicator.SetTarger(currentMan.transform);
             return;
@@ -78,8 +81,10 @@ public class InputController : MonoBehaviour
         if (collusion == null)
         {
             if (currentMan != null)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_approve");
                 currentMan.MoveTo(mousePos);
-
+            }
             return;
         }
 
@@ -89,15 +94,21 @@ public class InputController : MonoBehaviour
             case "Instrument":
                 BoxWithInstrument box = collusion.GetComponent<BoxWithInstrument>();
                 if (box != null && currentMan != null)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_approve");
                     currentMan.MoveToInstrument(box);
+                }
+                   
 
                 return;
 
             case "Problem":
                 ProblemScript problem = collusion.GetComponent<ProblemScript>();
                 if (problem != null && currentMan != null)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_approve");
                     currentMan.MoveToProblem(problem);
-
+                }
                 return;
         }
 
