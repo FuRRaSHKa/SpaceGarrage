@@ -1,5 +1,50 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9105410169568827982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/incident_wires
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/incident_wires
+  guid: fb98d815ce0eae4ea766e322cc32d4eb
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7910734976519237944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/main_music/volume
+  m_EditorClassIdentifier: 
+  Name: volume
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &-7463514715588846286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,7 +64,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -3147990946457844945}
   MinDistance: 0
   MaxDistance: 0
   Length: 115500
@@ -46,6 +92,189 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 90
+--- !u!114 &-7129308239145046441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/repair_leak
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/repair_leak
+  guid: 0725c0501fad7c40bf01f4efdb5923e9
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2600
+--- !u!114 &-5046640773050482448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/incident_panel
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/incident_panel
+  guid: 9b1a48a1f40cd946986bf0bc38c36a61
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4800826569169551503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tools/wrench_take
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tools/wrench_take
+  guid: eae94e5d3018b04aa586a076cd50f2f4
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150
+--- !u!114 &-4765068197339725236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/repair_fire
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/repair_fire
+  guid: da974ed49d7bab4a8a997b95ea9047ec
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2600
+--- !u!114 &-4523243695342039205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/incident_leak
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/incident_leak
+  guid: 5dad9b75771b9b4dbe04995d39df5f91
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4459070051586281843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tools/firethrower_take
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tools/firethrower_take
+  guid: 70811a76e7001b428b41f89299e4b3be
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150
+--- !u!114 &-3284124044869023662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/ui_deny
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/ui_deny
+  guid: 4fb64721a3e96a46aaf7aebc096968dc
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 300
+--- !u!114 &-3147990946457844945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/main_music/volume
+  m_EditorClassIdentifier: 
+  Name: volume
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 1
 --- !u!114 &-2989822534777710699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,6 +298,75 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2500
+--- !u!114 &-2919509027338128453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tools/hammer_take
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tools/hammer_take
+  guid: fac3b415f4a44647950d79fb16a283db
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150
+--- !u!114 &-2294273568828392116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/incident
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/incident
+  guid: 811556334f3c2c4696e434fe6879b482
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 568
+--- !u!114 &-64691670493178658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tools/tape_take
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tools/tape_take
+  guid: acebd8da7c5e614e8e4babe2c2acf3e0
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,13 +386,99 @@ MonoBehaviour:
   - {fileID: -7463514715588846286}
   - {fileID: 8903157122734791453}
   - {fileID: -7335214766859846149}
+  - {fileID: -7129308239145046441}
+  - {fileID: 4504658566179103082}
+  - {fileID: 4560855664461294444}
+  - {fileID: 5385085850665019940}
+  - {fileID: -3284124044869023662}
+  - {fileID: 289204720150333407}
+  - {fileID: -4523243695342039205}
+  - {fileID: 3947266897280523111}
+  - {fileID: -4459070051586281843}
+  - {fileID: 1843826338043169985}
+  - {fileID: -5046640773050482448}
+  - {fileID: -64691670493178658}
+  - {fileID: -4765068197339725236}
+  - {fileID: 5715689690787012507}
+  - {fileID: -4800826569169551503}
+  - {fileID: -2919509027338128453}
+  - {fileID: -9105410169568827982}
+  - {fileID: -2294273568828392116}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8224758295804816246}
   StringsBanks:
   - {fileID: 3141293961516787786}
-  stringsBankWriteTime: 637717931598774845
+  stringsBankWriteTime: 637718849996993993
   cacheVersion: 8
+--- !u!114 &289204720150333407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/repair_wires
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/repair_wires
+  guid: 5987944d9090744aa17b9f10e47fc145
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2600
+--- !u!114 &1843826338043169985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/repair_slime
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/repair_slime
+  guid: 7c01a858e61de046b350fd8688001849
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2600
+--- !u!114 &2458690566204796979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/main_music/volume
+  m_EditorClassIdentifier: 
+  Name: volume
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 0
+    data2: 0
+  Type: 0
+  IsGlobal: 0
+  Exists: 0
 --- !u!114 &3141293961516787786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,11 +494,80 @@ MonoBehaviour:
   Path: FMODbank/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637717931598774845
+  lastModified: 637718849996993993
   FileSizes:
   - Name: 
-    Value: 896
+    Value: 1778
   Exists: 1
+--- !u!114 &3947266897280523111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/incident_slime
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/incident_slime
+  guid: 62d5bc799d040942ad1b9e51b965b1bf
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4504658566179103082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/main_ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/main_ambience
+  guid: 16dee99b93577a4a9e890aae95bff7af
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 112800
+--- !u!114 &4560855664461294444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/tools/extinguisher_take
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/tools/extinguisher_take
+  guid: 3ec3cc4c076b1047977b775e16ca59a1
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 150
 --- !u!114 &4815499849458132308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +590,52 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &5385085850665019940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/incident_fire
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/incident_fire
+  guid: 4801f6a393ab364484ef8337df36cdcc
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5715689690787012507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/problems/repair_panel
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/problems/repair_panel
+  guid: e2d30b58a52c84429212223a01ed4917
+  Banks:
+  - {fileID: 8224758295804816246}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2600
 --- !u!114 &8224758295804816246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +651,7 @@ MonoBehaviour:
   Path: FMODbank/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637717931598694827
+  lastModified: 637718849996973995
   FileSizes: []
   Exists: 1
 --- !u!114 &8903157122734791453
