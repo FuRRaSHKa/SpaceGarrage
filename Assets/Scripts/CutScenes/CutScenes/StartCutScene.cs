@@ -46,11 +46,13 @@ public class StartCutScene : MonoBehaviour
         if (isStart)
             return;
 
-        isStart = false;
+       
+
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             instance.release();
+            isStart = true;
 
             prorab.transform.parent.gameObject.SetActive(false);
             cameraSmooth.MoveTo(starCamPos, startCamSize);
