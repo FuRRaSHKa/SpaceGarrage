@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c967b2345b1d2dc4f87f7f65e8f0d20a, type: 3}
   m_Name: FirstRound
   m_EditorClassIdentifier: 
-  maxSpawnDelay: 7
-  minSpawnDelay: 6
+  maxSpawnDelay: 8
+  minSpawnDelay: 7
   maxActiveCount: 4
   roundTime: 120
-  timeUntilFire: 7
+  timeUntilFire: 8
   timeToFix: 1
   timeToPutOutFire: 1
-  timeToLoseAfterFire: 10
+  timeToLoseAfterFire: 12
