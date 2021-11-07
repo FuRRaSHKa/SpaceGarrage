@@ -8,6 +8,7 @@ public class InputController : MonoBehaviour
     [SerializeField] private FollowObj weChooseIndicator;
     [SerializeField] private string pathChooseSound;
     [SerializeField] private string pathWalkSound;
+    [SerializeField] private JoraController jora;
 
     private ManController currentMan;
     private Camera cam;
@@ -19,7 +20,6 @@ public class InputController : MonoBehaviour
         cam = Camera.main;
         EventManager.onRoundEnd += RoundEnd;
         EventManager.onRoundStart += RoundStart;
-        RoundStart();
     }
 
     private void Update()
@@ -38,11 +38,12 @@ public class InputController : MonoBehaviour
 
     }
 
-    private void TakeBoy(ManController boy)
+    private void TakeBoy(ManController boy, Vector2 pos)
     {
         currentMan = boy;
         if (currentMan != null)
         {
+            jora.ChooseMech(pos);
             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_select");
             weChooseIndicator.gameObject.SetActive(true);
             weChooseIndicator.SetTarger(currentMan.transform);
@@ -59,7 +60,7 @@ public class InputController : MonoBehaviour
 
         if (collusion == null)
         {
-            TakeBoy(null);
+            TakeBoy(null, mousePos);
             return;
         }
 
@@ -67,7 +68,7 @@ public class InputController : MonoBehaviour
         {
             ManController newMan = collusion.GetComponent<ManController>();
             if (newMan != null)
-                TakeBoy(newMan);
+                TakeBoy(newMan, mousePos);
 
             return;
         }
@@ -82,6 +83,7 @@ public class InputController : MonoBehaviour
         {
             if (currentMan != null)
             {
+                jora.MakeCommand(mousePos);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_approve");
                 currentMan.MoveTo(mousePos);
             }
@@ -95,6 +97,7 @@ public class InputController : MonoBehaviour
                 BoxWithInstrument box = collusion.GetComponent<BoxWithInstrument>();
                 if (box != null && currentMan != null)
                 {
+                    jora.MakeCommand(mousePos);
                     FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_approve");
                     currentMan.MoveToInstrument(box);
                 }
@@ -106,6 +109,7 @@ public class InputController : MonoBehaviour
                 ProblemScript problem = collusion.GetComponent<ProblemScript>();
                 if (problem != null && currentMan != null)
                 {
+                    jora.MakeCommand(mousePos);
                     FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_approve");
                     currentMan.MoveToProblem(problem);
                 }

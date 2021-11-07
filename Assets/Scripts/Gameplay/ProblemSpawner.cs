@@ -109,12 +109,9 @@ public class ProblemSpawner : MonoBehaviour
                     case 2:
                         third.StarScene();
                         break;
-                    case 3:
-                        fourthCut.StartScene();
-                        break;
                 } 
             else
-                cutSceneManager.StartWin();
+                fourthCut.StartScene();
         else
             cutSceneManager.StartLose();
 
