@@ -1254,9 +1254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'time
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1561,14 +1559,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4573176974563447630, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4573176974484663905, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: shipShaking
       value: 
       objectReference: {fileID: 272303944}
+    - target: {fileID: 4573176974563447630, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4573176974563447633, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: m_Layer
       value: 0

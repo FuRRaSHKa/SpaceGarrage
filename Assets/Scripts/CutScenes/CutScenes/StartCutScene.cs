@@ -16,6 +16,8 @@ public class StartCutScene : MonoBehaviour
     private Vector3 starCamPos;
     private float startCamSize;
 
+    private bool isStart = true;
+
     private void Start()
     {
         Timer(() =>
@@ -36,13 +38,32 @@ public class StartCutScene : MonoBehaviour
         });
     }
 
+    private void Update()
+    {
+        if (isStart)
+            return;
+
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            prorab.transform.parent.gameObject.SetActive(false);
+            cameraSmooth.MoveTo(starCamPos, startCamSize);
+            EventManager.StartRound();
+        }
+    }
+
     public void StartScene()
     {
+        isStart = false;
+
         NextLine(0, 5, true, NextPhase);
     }
 
     private void NextLine(int count, int maxCount, bool isBoss, Action callback)
     {
+
+        if (isStart)
+            return;
+
         if (count >= maxCount)
         {
             Timer(() => callback?.Invoke(), 1);
@@ -75,6 +96,9 @@ public class StartCutScene : MonoBehaviour
         {
             NextLine(0, 3, true, () =>
             {
+                if (isStart)
+                    return;
+
                 Timer(() =>
                 {
                     prorab.transform.parent.gameObject.SetActive(false);
