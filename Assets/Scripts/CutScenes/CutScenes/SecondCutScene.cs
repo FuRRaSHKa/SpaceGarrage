@@ -9,16 +9,26 @@ public class SecondCutScene : MonoBehaviour
     [SerializeField] private MovingCharacter bossMoving;
     [SerializeField] private TextingScript prorab;
     [SerializeField] private TextingScript bossPhone;
-    //[SerializeField] private Transform placeForCam;
-    //[SerializeField] private float sizeCam;
+    [SerializeField] private Transform placeForCam;
+    [SerializeField] private float sizeCam;
     [SerializeField] private Transform[] waypoints;
+    [SerializeField] private string pathSound;
     private Camera cam;
     private Vector3 starCamPos;
     private float startCamSize;
+    private MoveCameraSmooth cameraSmooth;
+
+    private void Start()
+    {
+        cam = Camera.main;
+        startCamSize = cam.orthographicSize;
+        starCamPos = cam.transform.position;
+        cameraSmooth = cam.GetComponent<MoveCameraSmooth>();
+    }
 
     public void StarScene()
     {
-        Debug.Log(false);
+        FMODUnity.RuntimeManager.PlayOneShot(pathSound);
         Timer(() =>
         {
             NextWayPoint(0, Texting);
@@ -39,13 +49,17 @@ public class SecondCutScene : MonoBehaviour
     private void NextWayPointInverse(int i, Action calcback)
     {
         if (i < 0)
+        {
+            calcback?.Invoke();
             return;
+        }
 
-        bossMoving.MoveTo(waypoints[i].position, 5, () => NextWayPoint(--i, calcback));
+        bossMoving.MoveTo(waypoints[i].position, 5, () => NextWayPointInverse(--i, calcback));
     }
 
     private void Texting()
     {
+        cameraSmooth.MoveTo(placeForCam.position, sizeCam);
         prorab.transform.parent.gameObject.SetActive(true);
         NextLine(0, 3, true, GoOut);
     }
@@ -79,6 +93,8 @@ public class SecondCutScene : MonoBehaviour
 
     private void GoOut()
     {
+        prorab.transform.parent.gameObject.SetActive(false);
+        cameraSmooth.MoveTo(starCamPos, startCamSize);
         NextWayPointInverse(waypoints.Length - 1, () => 
         {
             Timer(() => 

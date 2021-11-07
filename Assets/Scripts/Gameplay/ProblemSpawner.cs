@@ -10,7 +10,9 @@ public class ProblemSpawner : MonoBehaviour
     [SerializeField] private List<RoundData> roundDatas;
     [SerializeField] private CutSceneManager cutSceneManager;
     [SerializeField] private UITimer uITimer;
-    [SerializeField] private SecondCutScene second; 
+    [SerializeField] private SecondCutScene second;
+    [SerializeField] private ThirdCutScene third;
+    [SerializeField] private FourthCutScene fourthCut;
 
     private int maxActiveCount = 2;
     private float maxSpawnDelay = 4;
@@ -99,7 +101,18 @@ public class ProblemSpawner : MonoBehaviour
 
         if(isWin)
             if(currentRound < roundDatas.Count)
-                second.StarScene();
+                switch (currentRound) 
+                {
+                    case 1:
+                        second.StarScene();
+                        break;
+                    case 2:
+                        third.StarScene();
+                        break;
+                    case 3:
+                        fourthCut.StartScene();
+                        break;
+                } 
             else
                 cutSceneManager.StartWin();
         else
