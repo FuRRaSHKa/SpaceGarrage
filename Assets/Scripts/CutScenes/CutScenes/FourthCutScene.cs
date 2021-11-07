@@ -26,8 +26,6 @@ public class FourthCutScene : MonoBehaviour
 
     private void Start()
     {
-        //StartScene();
-
         cam = Camera.main;
         startCamSize = cam.orthographicSize;
         starCamPos = cam.transform.position;

@@ -19,28 +19,3 @@
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
-[LOG] SoundI::release                          : win_tuba (000002E84EF41918)
-[LOG] SoundI::release                          :     win_tuba (000002E796956348)
-[LOG] SoundI::release                          :     win_tuba (000002E84EF3CB78)
-[LOG] SoundI::release                          : win_sax (000002E84EF3C9C8)
-[LOG] SoundI::release                          :     win_sax (000002E7969561A8)
-[LOG] SoundI::release                          :     win_sax (000002E84EF3B3D8)
-[LOG] SoundI::release                          : win_trumpet (000002E84EF3B078)
-[LOG] SoundI::release                          :     win_trumpet (000002E796959DC8)
-[LOG] SoundI::release                          :     win_trumpet (000002E84EF3E4C8)
-[LOG] SoundI::release                          : win_drums (000002E84EF3F908)
-[LOG] SoundI::release                          :     win_drums (000002E7969595A8)
-[LOG] SoundI::release                          :     win_drums (000002E84EF3CD28)
-[LOG] SoundI::release                          : scene5_win (000002E84EF3C158)
-[LOG] SoundI::release                          :     scene5_win (000002E796959748)
-[LOG] SoundI::release                          :     scene5_win (000002E84EF3F5A8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
