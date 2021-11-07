@@ -11,6 +11,8 @@ public class ThirdCutScene : MonoBehaviour
     [SerializeField] private Transform[] waypoints;
     [SerializeField] private string pathSound;
 
+    private bool isStart = true;
+
     public void StarScene()
     {
         FMODUnity.RuntimeManager.PlayOneShot(pathSound);
@@ -23,8 +25,23 @@ public class ThirdCutScene : MonoBehaviour
         });
     }
 
+    private void Update()
+    {
+        if (isStart)
+            return;
+
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            GoOut();
+            isStart = true;
+        }
+    }
+
     private void NextWayPoint(int i, Action callback)
     {
+        if (isStart)
+            return;
+
         if (i >= waypoints.Length)
         {
             callback?.Invoke();
@@ -36,6 +53,9 @@ public class ThirdCutScene : MonoBehaviour
 
     private void NextWayPointInverse(int i, Action calcback)
     {
+        if (isStart)
+            return;
+
         if (i < 0)
         {
             calcback?.Invoke();

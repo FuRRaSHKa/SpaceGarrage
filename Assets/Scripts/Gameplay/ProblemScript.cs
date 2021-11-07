@@ -157,7 +157,7 @@ public class ProblemScript : MonoBehaviour
             return false;
         }
 
-        isFixing = false;
+        isFixing = true;
 
         FMODUnity.RuntimeManager.PlayOneShot(pathPutOutSound);
         timer.StopTimer();
@@ -166,7 +166,7 @@ public class ProblemScript : MonoBehaviour
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
             {
-                isFixing = true;
+                isFixing = false;
                 isBurned = false;
                 burnEffect.enabled = false;
                 ToFire();

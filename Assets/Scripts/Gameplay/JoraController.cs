@@ -16,7 +16,7 @@ public class JoraController : MonoBehaviour
     public void MakeCommand(Vector2 pos)
     {
         float angle = Vector2.SignedAngle(Vector2.right, pos - (Vector2)transform.position);
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(new Vector3(0, 0, angle)), 10 * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         spriteRenderer.sprite = spriteCommand;
 
         disposable?.Dispose();
@@ -31,7 +31,7 @@ public class JoraController : MonoBehaviour
     public void ChooseMech( Vector2 pos)
     {
         float angle = Vector2.SignedAngle(Vector2.right, pos - (Vector2)transform.position);
-        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(new Vector3(0, 0, angle)), 10 * Time.deltaTime);
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
         spriteRenderer.sprite = spriteChoose;
 
         disposable?.Dispose();
