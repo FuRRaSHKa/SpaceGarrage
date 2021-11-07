@@ -15,7 +15,7 @@ MonoBehaviour:
   maxSpawnDelay: 5
   minSpawnDelay: 3
   maxActiveCount: 5
-  roundTime: 1
+  roundTime: 120
   timeUntilFire: 5
   timeToFix: 1
   timeToPutOutFire: 1
