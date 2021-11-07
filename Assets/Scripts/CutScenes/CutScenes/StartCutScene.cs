@@ -43,6 +43,7 @@ public class StartCutScene : MonoBehaviour
         if (isStart)
             return;
 
+        isStart = false;
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             prorab.transform.parent.gameObject.SetActive(false);

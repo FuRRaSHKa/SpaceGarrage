@@ -51,6 +51,7 @@ public class ProblemSpawner : MonoBehaviour
 
     private void StartSpawner()
     {
+        spawner?.Dispose();
         spawner = Observable.Interval(TimeSpan.FromSeconds(UnityEngine.Random.Range(minSpawnDelay, maxSpawnDelay)))
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
