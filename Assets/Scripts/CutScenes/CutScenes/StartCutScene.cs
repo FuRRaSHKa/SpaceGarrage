@@ -16,13 +16,16 @@ public class StartCutScene : MonoBehaviour
     private Vector3 starCamPos;
     private float startCamSize;
 
+    private FMOD.Studio.EventInstance instance;
+
     private bool isStart = true;
 
     private void Start()
     {
         Timer(() =>
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/scene1_boss_call");
+            instance = FMODUnity.RuntimeManager.CreateInstance("event:/scene1_boss_call");
+            instance.start();
 
             cam = Camera.main;
             startCamSize = cam.orthographicSize;
@@ -45,6 +48,9 @@ public class StartCutScene : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
+            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            instance.release();
+
             prorab.transform.parent.gameObject.SetActive(false);
             cameraSmooth.MoveTo(starCamPos, startCamSize);
             EventManager.StartRound();
