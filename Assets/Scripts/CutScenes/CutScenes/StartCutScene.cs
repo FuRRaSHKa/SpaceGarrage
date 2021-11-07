@@ -10,7 +10,6 @@ public class StartCutScene : MonoBehaviour
     [SerializeField] private TextingScript bossPhone;
     [SerializeField] private Transform placeForCam;
     [SerializeField] private float sizeCam;
-    [SerializeField] private string pathSound;
 
     private Camera cam;
     private MoveCameraSmooth cameraSmooth;
@@ -21,6 +20,8 @@ public class StartCutScene : MonoBehaviour
     {
         Timer(() =>
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/scene1_boss_call");
+
             cam = Camera.main;
             startCamSize = cam.orthographicSize;
             starCamPos = cam.transform.position;
@@ -28,7 +29,6 @@ public class StartCutScene : MonoBehaviour
             cameraSmooth.MoveTo(placeForCam.position, sizeCam);
             Timer(() =>
             {
-                FMODUnity.RuntimeManager.PlayOneShot(pathSound);
                 prorab.transform.parent.gameObject.SetActive(true);
 
                 StartScene();

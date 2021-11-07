@@ -18,8 +18,6 @@ public class FourthCutScene : MonoBehaviour
     [SerializeField] private Animator shipAnim;
     [SerializeField] private CamShaking shipShaking;
 
-    [SerializeField] private string pathSound;
-
     private Camera cam;
     private Vector3 starCamPos;
     private float startCamSize;
@@ -27,6 +25,8 @@ public class FourthCutScene : MonoBehaviour
 
     private void Start()
     {
+        //StartScene();
+
         cam = Camera.main;
         startCamSize = cam.orthographicSize;
         starCamPos = cam.transform.position;
@@ -35,6 +35,8 @@ public class FourthCutScene : MonoBehaviour
 
     public void StartScene()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/scene5_win");
+
         NextWayPoint(pop, 0, null, waypointsBatyoshka);
         NextWayPoint(boss, 0, FlyUp, waypointsBoss);
     }

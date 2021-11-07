@@ -259,6 +259,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218420693}
   m_CullTransparentMesh: 1
+--- !u!114 &272303944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 904646863946315248, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+  m_PrefabInstance: {fileID: 4573176975081725503}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd3dbc0cda3a65f4e86958d29c020bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &318064833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1267624465147367745, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
@@ -1709,6 +1720,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4573176974484663905, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: shipShaking
+      value: 
+      objectReference: {fileID: 272303944}
     - target: {fileID: 4573176974563447633, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: m_Layer
       value: 6
