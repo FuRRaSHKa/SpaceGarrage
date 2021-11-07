@@ -12,6 +12,8 @@ public class ProblemScript : MonoBehaviour
     [SerializeField] private SpriteRenderer burnEffect;
     [SerializeField] private SpriteRenderer normal;
     [SerializeField] private TimerSlider timer;
+    [SerializeField] private string pathReapairSound;
+    [SerializeField] private string pathPutOutSound;
 
     private float fixingTime;
     private float putOutFireTime;
@@ -68,6 +70,7 @@ public class ProblemScript : MonoBehaviour
     {
         ToFire();
 
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/problems/incident", transform.position);
         isBroken = true;
         enableToSpawn = false;
         normal.enabled = false;
@@ -90,16 +93,25 @@ public class ProblemScript : MonoBehaviour
     public bool FixIt(Instrument instrument, Action callback)
     {
         if (isFixing)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_deny");
             return false;
+        }
+            
 
         if (isBurned)
             return PutOutFire(instrument, callback);
 
         if (targetInstrumentType != instrument || !isBroken)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_deny");
             return false;
+        }
+            
 
         isFixing = true;
 
+        FMODUnity.RuntimeManager.PlayOneShot(pathReapairSound);
         timer.StopTimer();
         timerToFix?.Dispose();
         timerToFix = Observable.Timer(TimeSpan.FromSeconds(fixingTime))
@@ -133,10 +145,14 @@ public class ProblemScript : MonoBehaviour
 
 
         if (instrumentForSecondStage != instrument)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/ui_deny");
             return false;
+        }
 
         isFixing = false;
 
+        FMODUnity.RuntimeManager.PlayOneShot(pathPutOutSound);
         timer.StopTimer();
         timerToFix?.Dispose();
         timerToFix = Observable.Timer(TimeSpan.FromSeconds(putOutFireTime))

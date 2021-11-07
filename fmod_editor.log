@@ -8,13 +8,1525 @@
 [LOG] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002B51CD14608 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000027A9EDB3F48 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 3
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0000027AA3D1F2A8
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0000027AA3D1F2A8
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0000027AA3D1F2A8
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0000027AA3D1F2A8 connected, entering connected state
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A31CA9C08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote/C:/Users/Hate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-LkBrQq/hotswap_139.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'C:/Users/Hate/AppData/Local/FMOD Studio/UnsavedProjects/Hotswap-LkBrQq/hotswap_139.bank'
+[LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A31CA93C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A31CA9E18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_tape_take', format=5, channels=1, frequency=44100, lengthbytes=5120, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.903595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A31CA95D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_hammer_take', format=5, channels=1, frequency=44100, lengthbytes=3808, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651886.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A31CAA028
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A31CA93C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_extinguisher_take', format=5, channels=1, frequency=44100, lengthbytes=4096, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.583527.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BFD68)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BCE48)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AA3D39F78
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E877438)
+[LOG] SoundI::release                          :     sfx_tools_hammer_take (0000027A9F1BE9E8)
+[LOG] SoundI::release                          :  (0000027A2E8762F8)
+[LOG] SoundI::release                          :     sfx_tools_extinguisher_take (0000027A9F1BD188)
+[LOG] SoundI::release                          :  (0000027A2E8779F8)
+[LOG] SoundI::release                          :     sfx_tools_tape_take (0000027A9F1BFA28)
+[LOG] SoundI::release                          :  (0000027A2E875D38)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BFBC8)
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE508)
+[LOG] SoundI::release                          :  (0000027A2E878128)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BFD68)
+[LOG] SoundI::release                          :  (0000027A2E8758E8)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BE848)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1C0C08)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1BCE48)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1BD808)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1BE1C8)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BCFE8)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BF068)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BE028)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AA3D3A398
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AA3D3A398
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AA3D39948
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AB66A86F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_tape_take', format=5, channels=1, frequency=44100, lengthbytes=5120, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.903595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AB66AAA08
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_hammer_take', format=5, channels=1, frequency=44100, lengthbytes=3808, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651886.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BE508)
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BED28)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656148
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_panel', format=5, channels=2, frequency=44100, lengthbytes=88000, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.382599.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655F38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_wrench_take', format=5, channels=1, frequency=44100, lengthbytes=4832, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.839355.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_leak1', format=5, channels=1, frequency=44100, lengthbytes=66368, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.622986.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_leak2', format=5, channels=1, frequency=44100, lengthbytes=70464, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.553284.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_leak3', format=5, channels=1, frequency=44100, lengthbytes=64640, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.627869.
+[LOG] SoundI::release                          :  (0000027A2E8762F8)
+[LOG] SoundI::release                          :     sfx_tools_tape_take (0000027A9F1BCFE8)
+[LOG] SoundI::release                          :  (0000027A2E879B08)
+[LOG] SoundI::release                          :     sfx_tools_hammer_take (0000027A9F1BE028)
+[LOG] SoundI::release                          :  (0000027A2E877438)
+[LOG] SoundI::release                          :     sfx_repair_panel (0000027A9F1BE9E8)
+[LOG] SoundI::release                          :  (0000027A2E8779F8)
+[LOG] SoundI::release                          :     sfx_tools_wrench_take (0000027A9F1BD188)
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE848)
+[LOG] SoundI::release                          :  (0000027A2E8758E8)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1C0C08)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BEEC8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E6556F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655F38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E878128)
+[LOG] SoundI::release                          :     sfx_repair_leak1 (0000027A9F1BED28)
+[LOG] SoundI::release                          :  (0000027A2E878298)
+[LOG] SoundI::release                          :     sfx_repair_leak2 (0000027A9F1BD808)
+[LOG] SoundI::release                          :  (0000027A2E879268)
+[LOG] SoundI::release                          :     sfx_repair_leak3 (0000027A9F1BE1C8)
+[LOG] SoundI::release                          :  (0000027A2E875D38)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BCE48)
+[LOG] SoundI::release                          :  (0000027A2E874A88)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BE508)
+[LOG] SoundI::release                          :  (0000027A2E8796B8)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BFD68)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BE848)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1C0C08)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1BEEC8)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1BE028)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BE9E8)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BF068)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BCFE8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655D28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_tape_take', format=5, channels=1, frequency=44100, lengthbytes=5120, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.903595.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BFD68)
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BF208)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027AB66A86F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E8779F8)
+[LOG] SoundI::release                          :     sfx_tools_tape_take (0000027A9F1BFBC8)
+[LOG] SoundI::release                          :  (0000027A2E879268)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE848)
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BCFE8)
+[LOG] SoundI::release                          :  (0000027A2E8762F8)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BEEC8)
+[LOG] SoundI::release                          :  (0000027A2E877438)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BFA28)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BE9E8)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1BED28)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1BF208)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1C0C08)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BE1C8)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BFD68)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BCE48)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E6556F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_hammer_take', format=5, channels=1, frequency=44100, lengthbytes=3808, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651886.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_panel', format=5, channels=2, frequency=44100, lengthbytes=88000, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.382599.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BF068)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655D28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_tape_take', format=5, channels=1, frequency=44100, lengthbytes=5120, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.903595.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BED28)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BE1C8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sfx_tools_hammer_take (0000027A9F1BFA28)
+[LOG] SoundI::release                          :  (0000027A2E879828)
+[LOG] SoundI::release                          :     sfx_repair_panel (0000027A9F1BCE48)
+[LOG] SoundI::release                          :  (0000027A2E879998)
+[LOG] SoundI::release                          :     sfx_tools_tape_take (0000027A9F1BE848)
+[LOG] SoundI::release                          :  (0000027A2E876A28)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1C0C08)
+[LOG] SoundI::release                          :  (0000027A2E879268)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE028)
+[LOG] SoundI::release                          :  (0000027A2E879B08)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BEEC8)
+[LOG] SoundI::release                          :  (0000027A2E8796B8)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BD808)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BE508)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1BED28)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1BE9E8)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1BCFE8)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BD188)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BE1C8)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BF068)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655F38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655F38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_tape_take', format=5, channels=1, frequency=44100, lengthbytes=5120, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.903595.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BD188)
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BFD68)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656148
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E876A28)
+[LOG] SoundI::release                          :     sfx_tools_tape_take (0000027A9F1BCE48)
+[LOG] SoundI::release                          :  (0000027A2E878298)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BE9E8)
+[LOG] SoundI::release                          :  (0000027A2E874A88)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1C0C08)
+[LOG] SoundI::release                          :  (0000027A2E878128)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BCFE8)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BE028)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1BFBC8)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1BFA28)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1BFD68)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BD188)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BD808)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BE1C8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655D28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_hammer_take', format=5, channels=1, frequency=44100, lengthbytes=3808, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651886.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_panel', format=5, channels=2, frequency=44100, lengthbytes=88000, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.382599.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BE508)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_tape_take', format=5, channels=1, frequency=44100, lengthbytes=5120, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.903595.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_wires.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=396900, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_wires.wav (0000027A9F1BE508)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656148
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E8758E8)
+[LOG] SoundI::release                          :     sfx_tools_hammer_take (0000027A9F1BCE48)
+[LOG] SoundI::release                          :  (0000027A2E878858)
+[LOG] SoundI::release                          :     sfx_repair_panel (0000027A9F1BE848)
+[LOG] SoundI::release                          :  (0000027A2E8762F8)
+[LOG] SoundI::release                          :     sfx_tools_tape_take (0000027A9F1BCFE8)
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BED28)
+[LOG] SoundI::release                          :  (0000027A2E879828)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BE508)
+[LOG] SoundI::release                          :  (0000027A2E878128)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE028)
+[LOG] SoundI::release                          :  (0000027A2E876A28)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1C0C08)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BE1C8)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1BD188)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1BFA28)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1BE9E8)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BEEC8)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BF068)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BFBC8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E6556F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655F38
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_hammer_take', format=5, channels=1, frequency=44100, lengthbytes=3808, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651886.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_panel', format=5, channels=2, frequency=44100, lengthbytes=88000, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.382599.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BD808)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_firethrower_take', format=5, channels=1, frequency=44100, lengthbytes=3936, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.459717.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_ignite2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_burst2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame1.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame2.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_repair_slime_flame3.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=1, frequency=44100, lengthbytes=198450, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sfx_tools_hammer_take (0000027A9F1BE508)
+[LOG] SoundI::release                          :  (0000027A2E875D38)
+[LOG] SoundI::release                          :     sfx_repair_panel (0000027A9F1BE9E8)
+[LOG] SoundI::release                          :  (0000027A2E877438)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BE1C8)
+[LOG] SoundI::release                          :  (0000027A2E8758E8)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE028)
+[LOG] SoundI::release                          :  (0000027A2E878128)
+[LOG] SoundI::release                          :     sfx_tools_firethrower_take (0000027A9F1BEEC8)
+[LOG] SoundI::release                          :  (0000027A2E879268)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BE848)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BED28)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite1.wav (0000027A9F1BF208)
+[LOG] SoundI::release                          : sfx_repair_slime_ignite2.wav (0000027A9F1C0C08)
+[LOG] SoundI::release                          : sfx_repair_slime_burst1.wav (0000027A9F1BF068)
+[LOG] SoundI::release                          : sfx_repair_slime_burst2.wav (0000027A9F1BFA28)
+[LOG] SoundI::release                          : sfx_repair_slime_flame1.wav (0000027A9F1BFBC8)
+[LOG] SoundI::release                          : sfx_repair_slime_flame2.wav (0000027A9F1BCFE8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656358
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_wrench_take', format=5, channels=1, frequency=44100, lengthbytes=4832, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.839355.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_leak1', format=5, channels=1, frequency=44100, lengthbytes=66368, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.622986.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_leak2', format=5, channels=1, frequency=44100, lengthbytes=70464, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.553284.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655B18
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_leak3', format=5, channels=1, frequency=44100, lengthbytes=64640, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.627869.
+[LOG] SoundI::release                          : sfx_repair_slime_flame3.wav (0000027A9F1BCE48)
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BE508)
+[LOG] SoundI::release                          :  (0000027A2E8758E8)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BFA28)
+[LOG] SoundI::release                          :  (0000027A2E875D38)
+[LOG] SoundI::release                          :     sfx_tools_wrench_take (0000027A9F1BE848)
+[LOG] SoundI::release                          :  (0000027A2E8779F8)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BEEC8)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BCFE8)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655D28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_incident', format=5, channels=1, frequency=44100, lengthbytes=14880, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.301239.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E656148
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_select', format=5, channels=1, frequency=44100, lengthbytes=2240, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.472595.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E6556F8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sx_ui_approve', format=5, channels=1, frequency=44100, lengthbytes=2144, lengthpcm=3987, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348511.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655908
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_tools_hammer_take', format=5, channels=1, frequency=44100, lengthbytes=3808, lengthpcm=6615, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.651886.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 37443296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89056
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000953575F628
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFAF31160E0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFAF31160B0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFAF31161B0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFAF3116270
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000027A2E655D28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_repair_panel', format=5, channels=2, frequency=44100, lengthbytes=88000, lengthpcm=99225, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.382599.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote/D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file 'D:/Sound/!FMOD projects/Siberian Game Jam Fall 2021/Assets/SFX/sfx_inc_repair_done.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=44100, lengthbytes=105840, lengthpcm=26460, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0000027A2E875EA8)
+[LOG] SoundI::release                          :     sfx_repair_leak1 (0000027A9F1BD808)
+[LOG] SoundI::release                          :  (0000027A2E8762F8)
+[LOG] SoundI::release                          :     sfx_repair_leak2 (0000027A9F1BD188)
+[LOG] SoundI::release                          :  (0000027A2E876A28)
+[LOG] SoundI::release                          :     sfx_repair_leak3 (0000027A9F1BE028)
+[LOG] SoundI::release                          :  (0000027A2E875D38)
+[LOG] SoundI::release                          :     sfx_incident (0000027A9F1BE9E8)
+[LOG] SoundI::release                          :  (0000027A2E875778)
+[LOG] SoundI::release                          :     sfx_tools_hammer_take (0000027A9F1BFBC8)
+[LOG] SoundI::release                          :  (0000027A2E874A88)
+[LOG] SoundI::release                          :     sx_ui_approve (0000027A9F1BED28)
+[LOG] SoundI::release                          :  (0000027A2E878128)
+[LOG] SoundI::release                          :     sx_ui_select (0000027A9F1BFA28)
+[LOG] SoundI::release                          :  (0000027A2E877438)
+[LOG] SoundI::release                          :     sfx_repair_panel (0000027A9F1BFD68)
+[LOG] SoundI::release                          : sfx_inc_repair_done.wav (0000027A9F1BE1C8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] FMOD_OS_Net_Read                         : Interrupted.[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] ProfileClient::recvThreadLoopFunction    : Socket disconnected
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 132, compatVersion = 132 (oldest = 44, newest = 135)

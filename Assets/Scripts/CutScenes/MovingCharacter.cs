@@ -13,7 +13,7 @@ public class MovingCharacter : MonoBehaviour
     float journeyTime;
     float time = 0;
 
-    [SerializeField] bool isMoving = false;
+    bool isMoving = false;
     Action callback = null;
 
     public void MoveTo(Vector2 pos, float speed, Action callback)
@@ -35,6 +35,8 @@ public class MovingCharacter : MonoBehaviour
        
         time += Time.deltaTime;
         transform.position = Vector2.Lerp(startPos, targetPos, time / journeyTime);
+        float angle = Vector2.SignedAngle(Vector2.right, (Vector2)targetPos - (Vector2)transform.position);
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(new Vector3(0, 0, angle)), 10 * Time.deltaTime);
 
         if (journeyTime <= time)
         {

@@ -115,8 +115,8 @@ TextureImporter:
       name: AnimPop_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 892
+        x: 83
+        y: 893
         width: 170
         height: 157
       alignment: 0
@@ -136,8 +136,8 @@ TextureImporter:
       name: AnimPop_1
       rect:
         serializedVersion: 2
-        x: 352
-        y: 892
+        x: 521
+        y: 893
         width: 170
         height: 157
       alignment: 0
@@ -157,8 +157,8 @@ TextureImporter:
       name: AnimPop_2
       rect:
         serializedVersion: 2
-        x: 652
-        y: 892
+        x: 881
+        y: 893
         width: 170
         height: 157
       alignment: 0
@@ -178,8 +178,8 @@ TextureImporter:
       name: AnimPop_3
       rect:
         serializedVersion: 2
-        x: 942
-        y: 892
+        x: 83
+        y: 548
         width: 170
         height: 157
       alignment: 0
@@ -199,8 +199,8 @@ TextureImporter:
       name: AnimPop_4
       rect:
         serializedVersion: 2
-        x: 352
-        y: 600
+        x: 521
+        y: 548
         width: 170
         height: 157
       alignment: 0
@@ -220,8 +220,8 @@ TextureImporter:
       name: AnimPop_5
       rect:
         serializedVersion: 2
-        x: 652
-        y: 600
+        x: 521
+        y: 159
         width: 170
         height: 157
       alignment: 0
@@ -241,8 +241,8 @@ TextureImporter:
       name: AnimPop_6
       rect:
         serializedVersion: 2
-        x: 942
-        y: 600
+        x: 881
+        y: 159
         width: 170
         height: 157
       alignment: 0

@@ -8,6 +8,7 @@ public class BoxWithInstrument : MonoBehaviour
     [SerializeField] private Sprite instrumentSprite;
     [SerializeField] private Transform instrumerntPlace;
     [SerializeField] private Transform placeForPickUp;
+    [SerializeField] private string pickUpSound;
 
     public Instrument InstrumentType
     {
@@ -35,6 +36,7 @@ public class BoxWithInstrument : MonoBehaviour
 
     public Sprite PickUp()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(pickUpSound, transform.position);
         return instrumentSprite;
     }
 
