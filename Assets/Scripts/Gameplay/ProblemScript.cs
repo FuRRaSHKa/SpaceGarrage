@@ -10,6 +10,7 @@ public class ProblemScript : MonoBehaviour
     [SerializeField] private Instrument instrumentForSecondStage = Instrument.Extinguisher;
     [SerializeField] private Transform placeForFixing;
     [SerializeField] private SpriteRenderer burnEffect;
+    [SerializeField] private SpriteRenderer second;
     [SerializeField] private SpriteRenderer normal;
     [SerializeField] private TimerSlider timer;
     [SerializeField] private string pathReapairSound;
@@ -75,6 +76,9 @@ public class ProblemScript : MonoBehaviour
         enableToSpawn = false;
         normal.enabled = false;
         spriteRenderer.enabled = true;
+
+        if (second != null)
+            second.enabled = true;
     }
 
     public void ToFire()
@@ -122,6 +126,9 @@ public class ProblemScript : MonoBehaviour
                isBroken = false;
                normal.enabled = true;
                spriteRenderer.enabled = false;
+               if (second != null)
+                   second.enabled = false;
+
                callback?.Invoke();
                EventManager.ProblemFixed();
                MakeEnableToSpawn();

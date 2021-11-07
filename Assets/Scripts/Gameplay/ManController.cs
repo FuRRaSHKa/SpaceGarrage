@@ -15,6 +15,7 @@ public enum Instrument
 public class ManController : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer bodyRenderer;
+    [SerializeField] private Animator animator;
 
     private MansMovement mansMovement;
     private Instrument currentInstrument = Instrument.None;
@@ -24,6 +25,14 @@ public class ManController : MonoBehaviour
     private void Start()
     {
         mansMovement = GetComponent<MansMovement>();
+        EventManager.onRoundEnd += RoundEnd;
+    }
+
+    public void RoundEnd(bool isWin)
+    {
+        isFixing = false;
+        currentInstrument = Instrument.None;
+        bodyRenderer.enabled = false;
     }
 
     public void MoveTo(Vector2 pos)
@@ -58,8 +67,12 @@ public class ManController : MonoBehaviour
         {
             isFixing = problem.FixIt(currentInstrument, () => isFixing = false);
 
-            if(isFixing)
-                bodyRenderer.enabled = false;
+            if (isFixing)
+            {
+                animator.SetTrigger("Fixing");
+                 bodyRenderer.enabled = false;
+            }
+               
         });
     }
 

@@ -19,18 +19,21 @@ public class StartCutScene : MonoBehaviour
 
     private void Start()
     {
-        cam = Camera.main;
-        startCamSize = cam.orthographicSize;
-        starCamPos = cam.transform.position;
-        cameraSmooth = cam.GetComponent<MoveCameraSmooth>();
-        cameraSmooth.MoveTo(placeForCam.position, sizeCam);
-        Timer(() => 
+        Timer(() =>
         {
-            FMODUnity.RuntimeManager.PlayOneShot(pathSound);
-            prorab.transform.parent.gameObject.SetActive(true);
-            
-            StartScene();
-        });  
+            cam = Camera.main;
+            startCamSize = cam.orthographicSize;
+            starCamPos = cam.transform.position;
+            cameraSmooth = cam.GetComponent<MoveCameraSmooth>();
+            cameraSmooth.MoveTo(placeForCam.position, sizeCam);
+            Timer(() =>
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(pathSound);
+                prorab.transform.parent.gameObject.SetActive(true);
+
+                StartScene();
+            });
+        });
     }
 
     public void StartScene()

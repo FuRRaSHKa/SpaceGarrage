@@ -37,8 +37,10 @@ public class MoveCameraSmooth : MonoBehaviour
         cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, scale, speed * Time.deltaTime);
         t = Mathf.Lerp(t, 1, speed * Time.deltaTime);
 
-        if (t > .95f)
+        if (t > .99f)
         {
+            transform.position = target;
+            cam.orthographicSize = scale;
             isMoving = false;
         }
 

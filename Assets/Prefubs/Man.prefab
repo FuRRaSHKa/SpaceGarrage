@@ -303,6 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bodyRenderer: {fileID: 4468799576935267922}
+  animator: {fileID: 112377821289993445}
 --- !u!1 &7100556822862959934
 GameObject:
   m_ObjectHideFlags: 0
