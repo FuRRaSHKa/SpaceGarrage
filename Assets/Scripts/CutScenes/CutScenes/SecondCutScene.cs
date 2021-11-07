@@ -18,12 +18,29 @@ public class SecondCutScene : MonoBehaviour
     private float startCamSize;
     private MoveCameraSmooth cameraSmooth;
 
+    private bool isStart = true;
+
     private void Start()
     {
         cam = Camera.main;
         startCamSize = cam.orthographicSize;
         starCamPos = cam.transform.position;
         cameraSmooth = cam.GetComponent<MoveCameraSmooth>();
+    }
+
+    private void Update()
+    {
+        if (isStart)
+            return;
+
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            prorab.transform.parent.gameObject.SetActive(false);
+            cameraSmooth.MoveTo(starCamPos, startCamSize);
+            GoOut();
+            Debug.Log(true);
+            isStart = true;
+        }
     }
 
     public void StarScene()
@@ -37,6 +54,9 @@ public class SecondCutScene : MonoBehaviour
 
     private void NextWayPoint(int i, Action callback)
     {
+        if (isStart)
+            return;
+
         if (i >= waypoints.Length)
         {
             callback?.Invoke();
@@ -48,6 +68,9 @@ public class SecondCutScene : MonoBehaviour
 
     private void NextWayPointInverse(int i, Action calcback)
     {
+        if (isStart)
+            return;
+
         if (i < 0)
         {
             calcback?.Invoke();
@@ -66,6 +89,10 @@ public class SecondCutScene : MonoBehaviour
 
     private void NextLine(int count, int maxCount, bool isBoss, Action callback)
     {
+
+        if (isStart)
+            return;
+
         if (count >= maxCount)
         {
             Timer(() => callback?.Invoke(), 1);
