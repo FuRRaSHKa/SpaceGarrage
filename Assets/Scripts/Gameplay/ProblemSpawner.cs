@@ -122,13 +122,15 @@ public class ProblemSpawner : MonoBehaviour
             else
                 fourthCut.StartScene();
         else
+        {
+            cutSceneManager.StartLose();
 
-        musicInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        musicInstance.release();
+            musicInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            musicInstance.release();
 
-        ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        ambienceInstance.release();
-        cutSceneManager.StartLose();
+            ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            ambienceInstance.release();
+        }    
 
         spawner?.Dispose();
     }
