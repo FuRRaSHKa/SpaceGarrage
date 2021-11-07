@@ -89,14 +89,13 @@ public class ProblemScript : MonoBehaviour
 
     public bool FixIt(Instrument instrument, Action callback)
     {
-
         if (isFixing)
             return false;
 
         if (isBurned)
             return PutOutFire(instrument, callback);
 
-        if (targetInstrumentType != instrument)
+        if (targetInstrumentType != instrument || !isBroken)
             return false;
 
         isFixing = true;
@@ -131,6 +130,8 @@ public class ProblemScript : MonoBehaviour
 
     private bool PutOutFire(Instrument instrument, Action callback)
     {
+
+
         if (instrumentForSecondStage != instrument)
             return false;
 

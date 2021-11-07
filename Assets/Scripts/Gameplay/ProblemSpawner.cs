@@ -10,6 +10,7 @@ public class ProblemSpawner : MonoBehaviour
     [SerializeField] private List<RoundData> roundDatas;
     [SerializeField] private CutSceneManager cutSceneManager;
     [SerializeField] private UITimer uITimer;
+    [SerializeField] private SecondCutScene second; 
 
     private int maxActiveCount = 2;
     private float maxSpawnDelay = 4;
@@ -21,13 +22,6 @@ public class ProblemSpawner : MonoBehaviour
     private IDisposable spawner;
 
     bool isEnded = false;
-
-    private void Awake()
-    {
-        EventManager.onProblemFixed += ProblemFixed;
-        EventManager.onRoundEnd += OnRoundEnd;
-        EventManager.onRoundStart += RoundStart;
-    }
 
     private void InitData()
     {
@@ -48,7 +42,9 @@ public class ProblemSpawner : MonoBehaviour
 
     private void Start()
     {
-        RoundStart();
+        EventManager.onProblemFixed += ProblemFixed;
+        EventManager.onRoundEnd += OnRoundEnd;
+        EventManager.onRoundStart += RoundStart;
     }
 
     private void StartSpawner()
@@ -95,7 +91,6 @@ public class ProblemSpawner : MonoBehaviour
 
     private void OnRoundEnd(bool isWin)
     {
-        Debug.Log(false);
         if (isEnded)
             return;
 
@@ -104,7 +99,7 @@ public class ProblemSpawner : MonoBehaviour
 
         if(isWin)
             if(currentRound < roundDatas.Count)
-                cutSceneManager.StartCutScene();
+                second.StarScene();
             else
                 cutSceneManager.StartWin();
         else
