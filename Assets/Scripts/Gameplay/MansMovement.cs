@@ -9,6 +9,7 @@ public class MansMovement : MonoBehaviour
 
     [SerializeField] private float speed = 100f;
     [SerializeField] private float nextWaypointDistance = 1f;
+    [SerializeField] private Animator anim;
 
     private Path path = null;
     private int currentWaypoint;
@@ -23,6 +24,7 @@ public class MansMovement : MonoBehaviour
 
     public void MoveTo(Vector2 target, Action callback = null)
     {
+        anim.SetBool("Move", true);
         this.callback = callback;
         seeker.StartPath(transform.position, target, OnPathComplete);
     }
@@ -43,6 +45,7 @@ public class MansMovement : MonoBehaviour
 
         if (currentWaypoint >= path.vectorPath.Count)
         {
+            anim.SetBool("Move", false);
             callback?.Invoke();
             path = null;
             return;

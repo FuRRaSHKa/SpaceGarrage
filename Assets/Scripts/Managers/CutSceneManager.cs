@@ -7,8 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class CutSceneManager : MonoBehaviour
 {
-
     [SerializeField] private Animator anim;
+
+    public void Start()
+    {
+        Debug.Log(true);
+    }
 
     public void StartCutScene()
     {

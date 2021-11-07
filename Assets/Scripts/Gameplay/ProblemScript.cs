@@ -7,6 +7,7 @@ using UniRx;
 public class ProblemScript : MonoBehaviour
 {
     [SerializeField] private Instrument targetInstrumentType;
+    [SerializeField] private Instrument instrumentForSecondStage = Instrument.Extinguisher;
     [SerializeField] private Transform placeForFixing;
     [SerializeField] private SpriteRenderer burnEffect;
     [SerializeField] private SpriteRenderer normal;
@@ -22,6 +23,7 @@ public class ProblemScript : MonoBehaviour
     private IDisposable timerToFix;
     private bool isBroken = false;
     private bool isBurned = false;
+    private bool isFixing = false;
     private bool enableToSpawn = true;
 
     public bool IsBroken
@@ -87,12 +89,16 @@ public class ProblemScript : MonoBehaviour
 
     public bool FixIt(Instrument instrument, Action callback)
     {
+        if (isFixing)
+            return false;
 
         if (isBurned)
             return PutOutFire(instrument, callback);
 
-        if (targetInstrumentType != instrument)
+        if (targetInstrumentType != instrument || !isBroken)
             return false;
+
+        isFixing = true;
 
         timer.StopTimer();
         timerToFix?.Dispose();
@@ -100,6 +106,7 @@ public class ProblemScript : MonoBehaviour
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
            {
+               isFixing = false;
                isBroken = false;
                normal.enabled = true;
                spriteRenderer.enabled = false;
@@ -123,8 +130,12 @@ public class ProblemScript : MonoBehaviour
 
     private bool PutOutFire(Instrument instrument, Action callback)
     {
-        if (Instrument.Extinguisher != instrument)
+
+
+        if (instrumentForSecondStage != instrument)
             return false;
+
+        isFixing = false;
 
         timer.StopTimer();
         timerToFix?.Dispose();
@@ -132,6 +143,7 @@ public class ProblemScript : MonoBehaviour
             .TakeUntilDisable(gameObject)
             .Subscribe(_ =>
             {
+                isFixing = true;
                 isBurned = false;
                 burnEffect.enabled = false;
                 ToFire();

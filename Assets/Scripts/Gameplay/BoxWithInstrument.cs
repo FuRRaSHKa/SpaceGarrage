@@ -5,7 +5,7 @@ using UnityEngine;
 public class BoxWithInstrument : MonoBehaviour
 {
     [SerializeField] private Instrument instrumentType;
-    [SerializeField] private GameObject instrumentPrefub;
+    [SerializeField] private Sprite instrumentSprite;
     [SerializeField] private Transform instrumerntPlace;
     [SerializeField] private Transform placeForPickUp;
 
@@ -33,11 +33,9 @@ public class BoxWithInstrument : MonoBehaviour
         }
     }
 
-    public GameObject PickUp(Transform hand)
+    public Sprite PickUp()
     {
-        GameObject instrument = Instantiate(instrumentPrefub, hand);
-        instrument.transform.localPosition = Vector3.zero;
-        return instrument;
+        return instrumentSprite;
     }
 
     public void PlaceInstrument(GameObject instrument)
