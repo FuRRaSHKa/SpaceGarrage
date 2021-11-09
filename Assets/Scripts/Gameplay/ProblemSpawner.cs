@@ -121,7 +121,12 @@ public class ProblemSpawner : MonoBehaviour
                         break;
                 } 
             else
+            {
+                musicInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                ambienceInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
                 fourthCut.StartScene();
+            }
         else
         {
             cutSceneManager.StartLose();
