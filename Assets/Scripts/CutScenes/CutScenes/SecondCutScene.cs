@@ -30,24 +30,6 @@ public class SecondCutScene : MonoBehaviour
         cameraSmooth = cam.GetComponent<MoveCameraSmooth>();
     }
 
-    private void Update()
-    {
-        if (isStart)
-            return;
-
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
-        {
-            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            instance.release();
-
-            prorab.transform.parent.gameObject.SetActive(false);
-            cameraSmooth.MoveTo(starCamPos, startCamSize);
-            GoOut();
-            Debug.Log(true);
-            isStart = true;
-        }
-    }
-
     public void StarScene()
     {
         isStart = false;

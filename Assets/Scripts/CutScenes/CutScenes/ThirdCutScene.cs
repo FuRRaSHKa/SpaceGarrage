@@ -30,21 +30,6 @@ public class ThirdCutScene : MonoBehaviour
         });
     }
 
-    private void Update()
-    {
-        if (isStart)
-            return;
-
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
-        {
-            instance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            instance.release();
-
-            GoOut();
-            isStart = true;
-        }
-    }
-
     private void NextWayPoint(int i, Action callback)
     {
         if (isStart)

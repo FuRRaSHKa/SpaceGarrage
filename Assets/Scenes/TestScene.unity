@@ -1419,6 +1419,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1267624465578497987, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: m_Size.x
+      value: 2.032908
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267624465578497987, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.29211643
+      objectReference: {fileID: 0}
     - target: {fileID: 1267624465578498015, guid: 88744dae26eb7d14abd75b30f6bc37b7, type: 3}
       propertyPath: m_Layer
       value: 0
